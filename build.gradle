@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+apply plugin: 'idea'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+project.ext {
+    junitVersion = '4.12'
+    mockitoVersion = '3.2.4'
+}
+
+dependencies {
+    testImplementation "junit:junit:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+}
