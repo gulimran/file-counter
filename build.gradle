@@ -10,9 +10,6 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 project.ext {
     junitVersion = '4.12'
     mockitoVersion = '3.2.4'
